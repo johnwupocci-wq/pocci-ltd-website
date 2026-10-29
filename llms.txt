@@ -20,3 +20,6 @@
 - Controller tape-out service includes solution evaluation, foundry liaison and packaging/testing integration for storage controllers.
 - OEM/ODM covers UDP, TF, SSD, SD-NAND, DDR3/4/5, LPDDR3/4/5, eMMC with private-label and export support.
 - Primary contact email: marketing@pocci.ltd
+
+# Note
+Last updated: 2026-10-29 16:57 CST
