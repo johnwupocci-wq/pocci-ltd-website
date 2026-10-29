@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title data-i18n="prices.title">晶圆与成品实时参考价格</title>
+<meta name="description" content="LUXCEL 实时价格频道：存储晶圆与主要成品（UDP、TF 卡、SSD、SD-NAND、DDR、LPDDR、eMMC）参考报价，随行情更新，实际以下单当日报价为准。">
+<link rel="canonical" href="https://pocci.ltd/prices">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="LUXCEL">
+<meta property="og:title" content="晶圆与成品实时参考价格">
+<meta property="og:description" content="LUXCEL 实时价格频道：存储晶圆与主要成品（UDP、TF 卡、SSD、SD-NAND、DDR、LPDDR、eMMC）参考报价，随行情更新，实际以下单当日报价为准。">
+<meta property="og:url" content="https://pocci.ltd/prices">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:locale:alternate" content="en_US">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='2' y='2' width='28' height='28' rx='6' fill='%230e1420' stroke='%232a6df0' stroke-width='2'/%3E%3Crect x='9' y='9' width='14' height='14' rx='3' fill='none' stroke='%2338bdf8' stroke-width='2'/%3E%3Crect x='13' y='13' width='6' height='6' fill='%232a6df0'/%3E%3C/svg%3E">
+</head>
+<body data-page="prices.title">
+
+<!-- SVG 图标精灵：原创统一线性视觉家族（24 网格描边） -->
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M3.5 6h17M3.5 12h17M3.5 18h11"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></symbol>
+  <symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="M4 12h15M13 6l6 6-6 6"/></symbol>
+  <symbol id="i-arrow-down" viewBox="0 0 24 24"><path d="M12 4v15M6 13l6 6 6-6"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+  <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.2"/><path d="M3.8 12h16.4M12 3.8c2.3 2.3 3.5 5 3.5 8.2s-1.2 5.9-3.5 8.2c-2.3-2.3-3.5-5-3.5-8.2s1.2-5.9 3.5-8.2z"/></symbol>
+  <symbol id="i-chip" viewBox="0 0 24 24"><rect x="6.5" y="6.5" width="11" height="11" rx="1.5"/><rect x="9.5" y="9.5" width="5" height="5"/><path d="M9 3.5v3M12 3.5v3M15 3.5v3M9 17.5v3M12 17.5v3M15 17.5v3M3.5 9h3M3.5 12h3M3.5 15h3M17.5 9h3M17.5 12h3M17.5 15h3"/></symbol>
+  <symbol id="i-server" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="6" rx="1.5"/><rect x="3.5" y="13" width="17" height="6" rx="1.5"/><path d="M6.5 8h.01M6.5 16h.01M9.5 8h6"/></symbol>
+  <symbol id="i-memory" viewBox="0 0 24 24"><rect x="4.5" y="7" width="15" height="10" rx="1.5"/><path d="M8.5 7v10M12.5 7v10M16.5 7v10M4.5 12h15"/></symbol>
+  <symbol id="i-ssd" viewBox="0 0 24 24"><rect x="3.5" y="6.5" width="17" height="11" rx="2"/><path d="M7 12h2M12 12h2M17 12h2M7 15.5h2"/><circle cx="14.5" cy="15.5" r="0.9"/></symbol>
+  <symbol id="i-embedded" viewBox="0 0 24 24"><rect x="5" y="5" width="14" height="14" rx="2"/><rect x="10" y="10" width="4" height="4"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3.5l7 3v5.5c0 4.5-3 7.5-7 8.5-4-1-7-4-7-8.5V6.5z"/><path d="M8.5 11.5l2.5 2.5 4.5-4.5"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M6.5 3.5h11v17h-11z"/><path d="M10 18.5h4"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3.5" y="5.5" width="17" height="13" rx="1.5"/><path d="M4.5 7l7.5 6 7.5-6"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 3.5a5.8 5.8 0 0 1 5.8 5.8c0 4.1-5.8 11.2-5.8 11.2S6.2 13.4 6.2 9.3A5.8 5.8 0 0 1 12 3.5z"/><circle cx="12" cy="9.3" r="2"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.2"/><path d="M12 7.5V12l3 2"/></symbol>
+  <symbol id="i-wrench" viewBox="0 0 24 24"><path d="M14.8 4.6a5 5 0 0 0-6.4 6.9L3.8 16a2.1 2.1 0 0 0 3 3l4.5-4.6a5 5 0 0 0 6.9-6.4l-2.7 2.7-2.9-.7-.7-2.9z"/></symbol>
+  <symbol id="i-doc" viewBox="0 0 24 24"><path d="M7 3.5h7l4 4v13H7z"/><path d="M14 3.5V8h4M10 12h4.5M10 15.5h4.5"/></symbol>
+  <symbol id="i-box" viewBox="0 0 24 24"><path d="M4 7.5l8-4 8 4v9l-8 4-8-4z"/><path d="M4 7.5l8 4 8-4M12 11.5v9"/></symbol>
+  <symbol id="i-layers" viewBox="0 0 24 24"><path d="M12 3.5l8.5 4.5L12 12.5 3.5 8z"/><path d="M4.5 12.5l7.5 4 7.5-4M4.5 16.5l7.5 4 7.5-4"/></symbol>
+  <symbol id="i-sliders" viewBox="0 0 24 24"><path d="M5 5v4M5 13v6M12 5v8M12 17v2M19 5v10M19 19v0"/><circle cx="5" cy="11" r="2"/><circle cx="12" cy="15" r="2"/><circle cx="19" cy="17" r="2"/></symbol>
+  <symbol id="i-factory" viewBox="0 0 24 24"><path d="M3.5 20.5v-9l6 4v-4l6 4v-4l5 2.5v6.5z"/><path d="M8 15.5h.01M14 15.5h.01M19.5 11.5V4.5"/></symbol>
+  <symbol id="i-cube" viewBox="0 0 24 24"><path d="M12 3l7.5 4.2v9.6L12 21l-7.5-4.2V7.2z"/><path d="M12 12l7.5-4.8M12 12v9M12 12L4.5 7.2"/></symbol>
+</svg>
+
+<a class="skip-link" href="#main" data-i18n="common.skip">跳到主要内容</a>
+
+<header class="site-header" id="siteHeader">
+  <div class="container nav-row">
+    <a class="brand" href="index.html" aria-label="LUXCEL">
+      <span class="brand-mark"><svg class="icon"><use href="#i-cube"/></svg></span>
+      <span class="brand-name">
+        <strong data-i18n="brand.nick">LUXCEL</strong>
+        <small data-i18n="brand.tag">全球存储封测一站式服务</small>
+      </span>
+    </a>
+    <nav class="main-nav" aria-label="主导航">
+      <ul>
+        <li><a class="nav-link" href="index.html" data-i18n="nav.home">首页</a></li>
+        <li><a class="nav-link" href="about.html" data-i18n="nav.about">公司介绍</a></li>
+        <li><a class="nav-link" href="products.html" data-i18n="nav.products">产品</a></li>
+        <li><a class="nav-link" href="solutions.html" data-i18n="nav.solutions">方案</a></li>
+        <li><a class="nav-link" href="services.html" data-i18n="nav.services">技术服务</a></li>
+        <li><a class="nav-link" href="prices.html" aria-current="page" data-i18n="nav.prices">实时价格</a></li>
+        <li><a class="nav-link" href="contact.html" data-i18n="nav.contact">联系方式</a></li>
+      </ul>
+      <div class="nav-tools">
+        <div class="lang-switch" role="group" aria-label="语言切换">
+          <button type="button" data-lang="zh" aria-pressed="true">中</button>
+          <button type="button" data-lang="en" aria-pressed="false">EN</button>
+        </div>
+        <button class="nav-toggle" type="button" id="navToggle" aria-expanded="false" aria-controls="mobileMenu" data-i18n-aria="nav.menu">
+          <svg class="icon" data-icon-switch="menu"><use href="#i-menu"/></svg>
+        </button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<nav class="mobile-menu" id="mobileMenu" aria-label="移动端导航">
+  <ul>
+    <li><a href="index.html" data-i18n="nav.home">首页</a></li>
+    <li><a href="about.html" data-i18n="nav.about">公司介绍</a></li>
+    <li><a href="products.html" data-i18n="nav.products">产品</a></li>
+    <li><a href="solutions.html" data-i18n="nav.solutions">方案</a></li>
+    <li><a href="services.html" data-i18n="nav.services">技术服务</a></li>
+    <li><a href="prices.html" aria-current="page" data-i18n="nav.prices">实时价格</a></li>
+    <li><a href="contact.html" data-i18n="nav.contact">联系方式</a></li>
+  </ul>
+  <div class="mobile-lang" role="group" aria-label="语言切换">
+    <div class="lang-switch">
+      <button type="button" data-lang="zh" aria-pressed="true">中</button>
+      <button type="button" data-lang="en" aria-pressed="false">EN</button>
+    </div>
+  </div>
+</nav>
+
+<main id="main">
+
+  <section class="page-hero">
+    <div class="container">
+      <p class="kicker"><span class="dot" aria-hidden="true"></span><span data-i18n="prices.kicker">实时价格</span></p>
+      <h1 data-i18n="prices.title">晶圆与成品实时参考价格</h1>
+      <p data-i18n="prices.lead">覆盖存储晶圆与主要成品（UDP、TF 卡、SSD、SD-NAND、DDR、LPDDR、eMMC 等）的参考报价，随行情持续更新；实际以下单当日报价为准。</p>
+      <p class="compare-notes"><span data-i18n="prices.updated">更新日期</span>：2026-10-29</p>
+    </div>
+  </section>
+
+  <!-- 晶圆 / 颗粒 -->
+<!-- MARKET-BRIEF-START (此区块由 AI 每日 08:00 自动更新，勿手工编辑) -->
+  <section class="section" id="market-brief">
+    <div class="container">
+      <div class="section-head">
+        <h2>今日行情快报</h2>
+        <p class="lead" id="mb-meta">更新时间：2026-10-29 15:00（北京时间）　|　数据摘自 DRAMeXchange（TrendForce）与闪德资讯公开行情，仅供选型参考</p>
+      </div>
+      <div class="table-wrap">
+        <table class="compare-table">
+          <thead>
+            <tr>
+              <th scope="col">品项</th>
+              <th scope="col">最新参考价</th>
+              <th scope="col">涨跌</th>
+              <th scope="col">趋势</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">DDR5 16Gb (2Gx8) 4800/5600 颗粒（现货均价，10-29 盘）</th>
+              <td>US$61.83</td>
+              <td>+0.82%（日）</td>
+              <td>↑ 上涨</td>
+            </tr>
+            <tr>
+              <th scope="row">DDR4 16Gb (2Gx8) 3200 颗粒（现货均价，10-29 盘）</th>
+              <td>US$82.92</td>
+              <td>持平</td>
+              <td>→ 持稳</td>
+            </tr>
+            <tr>
+              <th scope="row">DDR4 8Gb (1Gx8) 3200 颗粒（现货均价，10-29 盘）</th>
+              <td>US$46.86</td>
+              <td>持平</td>
+              <td>→ 持稳</td>
+            </tr>
+            <tr>
+              <th scope="row">512Gb TLC 晶圆（现货均价，数据截至 10-26）</th>
+              <td>US$16.88</td>
+              <td>-9.19%（周）</td>
+              <td>↓ 加速下行</td>
+            </tr>
+            <tr>
+              <th scope="row">eMMC 64GB 5.1（现货，数据截至 10-27）</th>
+              <td>US$20.50</td>
+              <td>-4.65%（周）</td>
+              <td>↓ 走低</td>
+            </tr>
+            <tr>
+              <th scope="row">渠道 SSD（1TB PCIe 4.0，数据截至 10-27）</th>
+              <td>报价全线下调</td>
+              <td>-7.69%（周）</td>
+              <td>↓ 松动</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="compare-notes"><strong>行情解读：</strong>本周存储现货呈明显两极分化。DRAM 端因原厂产能持续转向 HBM 与服务器产品、消费级 DDR4 基本停产退出，现货报价坚挺，DDR5 16Gb 今日再涨 0.82%，DDR4 8Gb/16Gb 横盘但 Q4 合约价仍在走高——有长单需求的客户建议按季度用量尽早锁定，避免明年一季度追高。NAND 端则相反：手机品牌双十一降价去库存，叠加渠道商回笼资金杀价，512Gb TLC 晶圆单周跌 9.19%（连续第三周下跌且跌幅放大），低容量 eMMC 与渠道 SSD 同步回落。需注意这轮下跌属高位回调而非趋势反转：贸易价与晶圆官价价差已拉大至 30% 以上、原厂让价意愿低，一旦渠道库存出清存在快速反弹风险。建议 NAND 相关采购按 4:3:3 分批小量试探底部，不宜赌单边下跌；成品组装客户可趁资源松动期补入 wafer 与颗粒，锁定成品毛利。</p>
+      <p class="compare-notes">来源：<a href="https://www.trendforce.com/price/dram" target="_blank" rel="noopener">TrendForce DRAM 现货价格（2026-10-29 盘）</a>　·　<a href="https://www.trendforce.com/news/2026/10/28/insights-memory-spot-price-update-nand-spot-price-cuts-accelerate-amid-china-phone-discounts-512gb-tlc-sink-9-19/" target="_blank" rel="noopener">TrendForce 现货价格趋势报告（NAND）</a>　·　<a href="https://www.0101ssd.com/" target="_blank" rel="noopener">闪德资讯</a>　|　声明：价格摘自公开渠道，非实时成交价，实际以下单当日报价为准。</p>
+    </div>
+  </section>
+  <!-- MARKET-BRIEF-END -->
+
+  <section class="section" id="wafer">
+    <div class="container">
+      <div class="section-head">
+        <h2 data-i18n="prices.waferTitle">晶圆 / 颗粒</h2>
+        <p class="lead" data-i18n="prices.waferLead">NAND / DRAM 晶圆与原厂颗粒，支持代采与长期锁价。</p>
+      </div>
+      <div class="compare-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th scope="col" data-i18n="prices.t1.item">品项</th>
+              <th scope="col" data-i18n="prices.t1.spec">规格 / 形态</th>
+              <th scope="col" data-i18n="prices.t1.price">参考价</th>
+              <th scope="col" data-i18n="prices.t1.trend">行情</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row" data-i18n="prices.p1">NAND 晶圆</th>
+              <td data-i18n="prices.p1.spec">512Gb TLC 晶圆（示例）</td>
+              <td data-i18n="prices.p1.price">询价</td>
+              <td data-i18n="prices.trend.up">↑ 上涨</td>
+            </tr>
+            <tr>
+              <th scope="row" data-i18n="prices.p2">NAND 晶圆</th>
+              <td data-i18n="prices.p2.spec">1Tb TLC 晶圆（示例）</td>
+              <td data-i18n="prices.p2.price">询价</td>
+              <td data-i18n="prices.trend.flat">→ 持平</td>
+            </tr>
+            <tr>
+              <th scope="row" data-i18n="prices.p3">DRAM 颗粒</th>
+              <td data-i18n="prices.p3.spec">DDR4 8Gb 颗粒（示例）</td>
+              <td data-i18n="prices.p3.price">询价</td>
+              <td data-i18n="prices.trend.up">↑ 上涨</td>
+            </tr>
+            <tr>
+              <th scope="row" data-i18n="prices.p4">DRAM 颗粒</th>
+              <td data-i18n="prices.p4.spec">DDR5 16Gb 颗粒（示例）</td>
+              <td data-i18n="prices.p4.price">询价</td>
+              <td data-i18n="prices.trend.flat">→ 持平</td>
+            </tr>
+            <tr>
+              <th scope="row" data-i18n="prices.p5">NAND 颗粒</th>
+              <td data-i18n="prices.p5.spec">256Gb / 512Gb BGA 封装颗粒（示例）</td>
+              <td data-i18n="prices.p5.price">询价</td>
+              <td data-i18n="prices.trend.down">↓ 下跌</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- 成品 -->
+  <section class="section section-alt" id="finished">
+    <div class="container">
+      <div class="section-head">
+        <h2 data-i18n="prices.fabTitle">成品</h2>
+        <p class="lead" data-i18n="prices.fabLead">自有封测产能与 OEM / ODM 代工产线，支持贴牌与出口认证配套。</p>
+      </div>
+      <div class="compare-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th scope="col" data-i18n="prices.t1.item">品项</th>
+              <th scope="col" data-i18n="prices.t1.spec">规格 / 形态</th>
+              <th scope="col" data-i18n="prices.t1.price">参考价</th>
+              <th scope="col" data-i18n="prices.t1.trend">行情</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row" data-i18n="prices.q1">TF 卡</th>
+              <td data-i18n="prices.q1.spec">32GB / 64GB，Class 10（示例）</td>
+              <td data-i18n="prices.q1.price">询价</td>
+              <td data-i18n="prices.trend.flat">→ 持平</td>
+            </tr>
+            <tr>
+              <th scope="row" data-i18n="prices.q2">UDP</th>
+              <td data-i18n="prices.q2.spec">8GB / 16GB / 32GB 芯片（示例）</td>
+              <td data-i18n="prices.q2.price">询价</td>
+              <td data-i18n="prices.trend.up">↑ 上涨</td>
+            </tr>
+            <tr>
+              <th scope="row" data-i18n="prices.q3">SSD</th>
+              <td data-i18n="prices.q3.spec">M.2 / SATA，128GB – 1TB（示例）</td>
+              <td data-i18n="prices.q3.price">询价</td>
+              <td data-i18n="prices.trend.flat">→ 持平</td>
+            </tr>
+            <tr>
+              <th scope="row" data-i18n="prices.q4">SD-NAND</th>
+              <td data-i18n="prices.q4.spec">贴片式 1GB – 8GB（示例）</td>
+              <td data-i18n="prices.q4.price">询价</td>
+              <td data-i18n="prices.trend.flat">→ 持平</td>
+            </tr>
+            <tr>
+              <th scope="row" data-i18n="prices.q5">eMMC</th>
+              <td data-i18n="prices.q5.spec">8GB – 128GB，HS400（示例）</td>
+              <td data-i18n="prices.q5.price">询价</td>
+              <td data-i18n="prices.trend.down">↓ 下跌</td>
+            </tr>
+            <tr>
+              <th scope="row" data-i18n="prices.q6">DDR4 内存条</th>
+              <td data-i18n="prices.q6.spec">8GB / 16GB / 32GB UDIMM（示例）</td>
+              <td data-i18n="prices.q6.price">询价</td>
+              <td data-i18n="prices.trend.up">↑ 上涨</td>
+            </tr>
+            <tr>
+              <th scope="row" data-i18n="prices.q7">DDR5 内存条</th>
+              <td data-i18n="prices.q7.spec">16GB / 32GB / 48GB UDIMM（示例）</td>
+              <td data-i18n="prices.q7.price">询价</td>
+              <td data-i18n="prices.trend.up">↑ 上涨</td>
+            </tr>
+            <tr>
+              <th scope="row" data-i18n="prices.q8">LPDDR 颗粒 / 模组</th>
+              <td data-i18n="prices.q8.spec">LPDDR4X / LPDDR5（示例）</td>
+              <td data-i18n="prices.q8.price">询价</td>
+              <td data-i18n="prices.trend.flat">→ 持平</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="compare-notes" data-i18n="prices.note">以上为市场参考价（示例），随行情波动，批量与长期订单另有优惠；获取锁定报价请联系商务。</p>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <div class="container">
+      <h2 data-i18n="prices.lockTitle">获取实时锁定报价</h2>
+      <p data-i18n="prices.lockLead">告知品项、规格与月用量，我们在当日行情基础上给出锁定报价。</p>
+      <a class="btn btn-primary" href="contact.html"><span data-i18n="prices.lockBtn">联系商务询价</span><svg class="icon"><use href="#i-arrow-right"/></svg></a>
+      <a class="btn btn-secondary" href="services.html" data-i18n="prices.lock2Btn">查看封测服务</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container-wide footer-top">
+    <div class="footer-brand">
+      <a class="brand" href="index.html" aria-label="LUXCEL">
+        <span class="brand-mark"><svg class="icon"><use href="#i-cube"/></svg></span>
+        <span class="brand-name">
+          <strong data-i18n="brand.nick">LUXCEL</strong>
+          <small data-i18n="brand.tag">全球存储封测一站式服务</small>
+        </span>
+      </a>
+      <p data-i18n="foot.tagline">专注全球存储封装测试：工厂代建、新二手封测设备、生产代运营、晶圆代采、主控代流片与 OEM/ODM，产品覆盖 UDP、TF、SSD、SD-NAND、DDR、LPDDR、eMMC 等。</p>
+    </div>
+    <nav class="footer-nav" aria-label="栏目">
+      <h4 data-i18n="foot.navs">栏目</h4>
+      <ul>
+        <li><a href="index.html" data-i18n="nav.home">首页</a></li>
+        <li><a href="about.html" data-i18n="nav.about">公司介绍</a></li>
+        <li><a href="products.html" data-i18n="nav.products">产品</a></li>
+        <li><a href="solutions.html" data-i18n="nav.solutions">方案</a></li>
+        <li><a href="services.html" data-i18n="nav.services">技术服务</a></li>
+        <li><a href="prices.html" data-i18n="nav.prices">实时价格</a></li>
+        <li><a href="contact.html" data-i18n="nav.contact">联系方式</a></li>
+      </ul>
+    </nav>
+    <nav class="footer-nav" aria-label="产品">
+      <h4 data-i18n="foot.products">产品</h4>
+      <ul>
+        <li><a href="products.html#nvme" data-i18n="home.products.1.name">企业级 NVMe SSD</a></li>
+        <li><a href="products.html#ddr5" data-i18n="home.products.2.name">DDR5 内存模组</a></li>
+        <li><a href="products.html#sata" data-i18n="home.products.3.name">工业级 SATA SSD</a></li>
+        <li><a href="products.html#embedded" data-i18n="home.products.4.name">嵌入式存储</a></li>
+      </ul>
+    </nav>
+    <nav class="footer-nav" aria-label="技术服务">
+      <h4 data-i18n="foot.services">技术服务</h4>
+      <ul>
+        <li><a href="services.html#flow" data-i18n="services.flowTitle">项目协作流程</a></li>
+        <li><a href="services.html#rma" data-i18n="services.rmaTitle">RMA 处理状态</a></li>
+        <li><a href="contact.html" data-i18n="nav.contact">联系方式</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="container-wide footer-bottom">
+    <span data-i18n="foot.copyright">© 2026 LUXCEL 存储科技</span>
+    <span class="legal" data-i18n="foot.legal">本站为LUXCEL 存储科技</span>
+  </div>
+</footer>
+
+<script src="assets/js/i18n.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title data-i18n="solutions.title">面向场景的存储方案</title>
+<meta name="description" content="LUXCEL 面向数据中心、工业自动化、安防与边缘计算等场景的存储解决方案。">
+<link rel="canonical" href="https://pocci.ltd/solutions">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="LUXCEL">
+<meta property="og:title" content="面向场景的存储方案">
+<meta property="og:description" content="LUXCEL 面向数据中心、工业自动化、安防与边缘计算等场景的存储解决方案。">
+<meta property="og:url" content="https://pocci.ltd/solutions">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:locale:alternate" content="en_US">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='2' y='2' width='28' height='28' rx='6' fill='%230e1420' stroke='%232a6df0' stroke-width='2'/%3E%3Crect x='9' y='9' width='14' height='14' rx='3' fill='none' stroke='%2338bdf8' stroke-width='2'/%3E%3Crect x='13' y='13' width='6' height='6' fill='%232a6df0'/%3E%3C/svg%3E">
+</head>
+<body data-page="solutions.title">
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M3.5 6h17M3.5 12h17M3.5 18h11"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></symbol>
+  <symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="M4 12h15M13 6l6 6-6 6"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+  <symbol id="i-server" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="6" rx="1.5"/><rect x="3.5" y="13" width="17" height="6" rx="1.5"/><path d="M6.5 8h.01M6.5 16h.01M9.5 8h6"/></symbol>
+  <symbol id="i-ssd" viewBox="0 0 24 24"><rect x="3.5" y="6.5" width="17" height="11" rx="2"/><path d="M7 12h2M12 12h2M17 12h2M7 15.5h2"/><circle cx="14.5" cy="15.5" r="0.9"/></symbol>
+  <symbol id="i-embedded" viewBox="0 0 24 24"><rect x="5" y="5" width="14" height="14" rx="2"/><rect x="10" y="10" width="4" height="4"/></symbol>
+  <symbol id="i-layers" viewBox="0 0 24 24"><path d="M12 3.5l8.5 4.5L12 12.5 3.5 8z"/><path d="M4.5 12.5l7.5 4 7.5-4M4.5 16.5l7.5 4 7.5-4"/></symbol>
+  <symbol id="i-cube" viewBox="0 0 24 24"><path d="M12 3l7.5 4.2v9.6L12 21l-7.5-4.2V7.2z"/><path d="M12 12l7.5-4.8M12 12v9M12 12L4.5 7.2"/></symbol>
+</svg>
+
+<a class="skip-link" href="#main" data-i18n="common.skip">跳到主要内容</a>
+
+<header class="site-header" id="siteHeader">
+  <div class="container nav-row">
+    <a class="brand" href="index.html" aria-label="LUXCEL">
+      <span class="brand-mark"><svg class="icon"><use href="#i-cube"/></svg></span>
+      <span class="brand-name">
+        <strong data-i18n="brand.nick">LUXCEL</strong>
+        <small data-i18n="brand.tag">全球存储封测一站式服务</small>
+      </span>
+    </a>
+    <nav class="main-nav" aria-label="主导航">
+      <ul>
+        <li><a class="nav-link" href="index.html" data-i18n="nav.home">首页</a></li>
+        <li><a class="nav-link" href="about.html" data-i18n="nav.about">公司介绍</a></li>
+        <li><a class="nav-link" href="products.html" data-i18n="nav.products">产品</a></li>
+        <li><a class="nav-link" href="solutions.html" aria-current="page" data-i18n="nav.solutions">方案</a></li>
+        <li><a class="nav-link" href="services.html" data-i18n="nav.services">技术服务</a></li>
+        <li><a class="nav-link" href="prices.html" data-i18n="nav.prices">实时价格</a></li>
+<li><a class="nav-link" href="contact.html" data-i18n="nav.contact">联系方式</a></li>
+      </ul>
+      <div class="nav-tools">
+        <div class="lang-switch" role="group" aria-label="语言切换">
+          <button type="button" data-lang="zh" aria-pressed="true">中</button>
+          <button type="button" data-lang="en" aria-pressed="false">EN</button>
+        </div>
+        <button class="nav-toggle" type="button" id="navToggle" aria-expanded="false" aria-controls="mobileMenu" data-i18n-aria="nav.menu">
+          <svg class="icon" data-icon-switch="menu"><use href="#i-menu"/></svg>
+        </button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<nav class="mobile-menu" id="mobileMenu" aria-label="移动端导航">
+  <ul>
+    <li><a href="index.html" data-i18n="nav.home">首页</a></li>
+    <li><a href="about.html" data-i18n="nav.about">公司介绍</a></li>
+    <li><a href="products.html" data-i18n="nav.products">产品</a></li>
+    <li><a href="solutions.html" aria-current="page" data-i18n="nav.solutions">方案</a></li>
+    <li><a href="services.html" data-i18n="nav.services">技术服务</a></li>
+    <li><a href="prices.html" data-i18n="nav.prices">实时价格</a></li>
+        <li><a href="contact.html" data-i18n="nav.contact">联系方式</a></li>
+  </ul>
+  <div class="mobile-lang" role="group" aria-label="语言切换">
+    <div class="lang-switch">
+      <button type="button" data-lang="zh" aria-pressed="true">中</button>
+      <button type="button" data-lang="en" aria-pressed="false">EN</button>
+    </div>
+  </div>
+</nav>
+
+<main id="main">
+
+  <section class="page-hero">
+    <div class="container">
+      <p class="kicker" data-i18n="solutions.kicker">解决方案</p>
+      <h1 data-i18n="solutions.title">面向场景的存储方案</h1>
+      <p data-i18n="solutions.lead">从数据中心到边缘终端，我们基于产品族与验证能力，为典型场景提供可落地的存储组合方案。</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+
+      <!-- 方案 1 -->
+      <article class="solution-card" id="dc">
+        <div class="solution-body reveal">
+          <p class="scenario-tag" data-i18n="solutions.s1.tag">数据中心 / 云计算</p>
+          <h3 data-i18n="solutions.s1.title">服务器存储组合</h3>
+          <p data-i18n="solutions.s1.desc">面向虚拟化、数据库与缓存场景，组合企业级 NVMe SSD 与内存模组，兼顾性能与可靠性。</p>
+          <ol class="solution-steps">
+            <li>
+              <h4 data-i18n="solutions.s1.step1.title">评估负载</h4>
+              <p data-i18n="solutions.s1.step1.desc">明确读写比例、容量需求与运行温度。</p>
+            </li>
+            <li>
+              <h4 data-i18n="solutions.s1.step2.title">选型组合</h4>
+              <p data-i18n="solutions.s1.step2.desc">按场景选择 NVMe SSD 与内存模组的容量与频率。</p>
+            </li>
+            <li>
+              <h4 data-i18n="solutions.s1.step3.title">样品验证</h4>
+              <p data-i18n="solutions.s1.step3.desc">在目标平台完成兼容性与压力验证。</p>
+            </li>
+          </ol>
+          <p class="band-desc mb-0" data-i18n="solutions.s1.out">输出：数据迁移路径、验证报告与量产导入支持。</p>
+        </div>
+        <div class="solution-visual reveal">
+          <img src="assets/img/hero-nvme-ssd.png" alt="企业级 NVMe SSD 概念渲染" data-i18n-alt="home.mediaCap" width="2560" height="1440">
+        </div>
+      </article>
+
+      <!-- 方案 2 -->
+      <article class="solution-card" id="industrial">
+        <div class="solution-body reveal">
+          <p class="scenario-tag" data-i18n="solutions.s2.tag">工业自动化 / 边缘</p>
+          <h3 data-i18n="solutions.s2.title">宽温工业存储</h3>
+          <p data-i18n="solutions.s2.desc">面向控制器、边缘网关与户外设备，以宽温 SATA SSD 保障长时间稳定运行。</p>
+          <ol class="solution-steps">
+            <li>
+              <h4 data-i18n="solutions.s2.step1.title">确认环境</h4>
+              <p data-i18n="solutions.s2.step1.desc">明确温度、振动与断电等运行条件。</p>
+            </li>
+            <li>
+              <h4 data-i18n="solutions.s2.step2.title">宽温选型</h4>
+              <p data-i18n="solutions.s2.step2.desc">按温度等级与寿命需求选择型号。</p>
+            </li>
+            <li>
+              <h4 data-i18n="solutions.s2.step3.title">可靠性验证</h4>
+              <p data-i18n="solutions.s2.step3.desc">按既定项目完成样品验证并输出报告。</p>
+            </li>
+          </ol>
+          <p class="band-desc mb-0" data-i18n="solutions.s2.out">输出：选型表、验证结果与批量供应方案。</p>
+        </div>
+        <div class="solution-visual reveal">
+          <img src="assets/img/industrial-sata-ssd.png" alt="工业级 SATA SSD 概念渲染" data-i18n-alt="products.band3.imgAlt" width="2560" height="1440">
+        </div>
+      </article>
+
+      <!-- 方案 3 -->
+      <article class="solution-card" id="surveillance">
+        <div class="solution-body reveal">
+          <p class="scenario-tag" data-i18n="solutions.s3.tag">安防 / 监控</p>
+          <h3 data-i18n="solutions.s3.title">监控存储扩容</h3>
+          <p data-i18n="solutions.s3.desc">面向录像存储与智能分析，按写入负载与保存周期规划容量与接口。</p>
+          <ol class="solution-steps">
+            <li>
+              <h4 data-i18n="solutions.s3.step1.title">计算容量</h4>
+              <p data-i18n="solutions.s3.step1.desc">按码流与保存天数估算容量。</p>
+            </li>
+            <li>
+              <h4 data-i18n="solutions.s3.step2.title">匹配接口</h4>
+              <p data-i18n="solutions.s3.step2.desc">按设备接口选择 SATA 或 NVMe 方案。</p>
+            </li>
+            <li>
+              <h4 data-i18n="solutions.s3.step3.title">批量交付</h4>
+              <p data-i18n="solutions.s3.step3.desc">确认批次一致性并规模化供货。</p>
+            </li>
+          </ol>
+          <p class="band-desc mb-0" data-i18n="solutions.s3.out">输出：容量规划表与持续供货计划。</p>
+        </div>
+        <div class="solution-visual reveal">
+          <img src="assets/img/datacenter-scene.png" alt="数据中心监控场景概念渲染" data-i18n-alt="solutions.s3.imgAlt" width="2560" height="1440">
+        </div>
+      </article>
+
+      <!-- 方案 4 -->
+      <article class="solution-card" id="embedded">
+        <div class="solution-body reveal">
+          <p class="scenario-tag" data-i18n="solutions.s4.tag">智能终端 / 车载</p>
+          <h3 data-i18n="solutions.s4.title">嵌入式存储集成</h3>
+          <p data-i18n="solutions.s4.desc">面向智能终端与车载平台，提供小型化、低功耗的存储器件与固件适配。</p>
+          <ol class="solution-steps">
+            <li>
+              <h4 data-i18n="solutions.s4.step1.title">接口确认</h4>
+              <p data-i18n="solutions.s4.step1.desc">确认主控接口、尺寸与温度等级。</p>
+            </li>
+            <li>
+              <h4 data-i18n="solutions.s4.step2.title">样品适配</h4>
+              <p data-i18n="solutions.s4.step2.desc">完成固件参数适配与整机验证。</p>
+            </li>
+            <li>
+              <h4 data-i18n="solutions.s4.step3.title">量产导入</h4>
+              <p data-i18n="solutions.s4.step3.desc">建立供应与追溯机制后导入量产。</p>
+            </li>
+          </ol>
+          <p class="band-desc mb-0" data-i18n="solutions.s4.out">输出：规格确认单、适配记录与量产支持。</p>
+        </div>
+        <div class="solution-visual reveal">
+          <img src="assets/img/embedded-storage.png" alt="嵌入式存储概念渲染" data-i18n-alt="products.band4.imgAlt" width="2560" height="1440">
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <div class="container">
+      <h2 data-i18n="solutions.ctaTitle">找到匹配场景？</h2>
+      <p data-i18n="solutions.ctaLead">带我们了解你的负载与环境，一起定义验证路径。</p>
+      <a class="btn btn-primary" href="contact.html"><span data-i18n="solutions.ctaBtn">咨询方案</span><svg class="icon"><use href="#i-arrow-right"/></svg></a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container-wide footer-top">
+    <div class="footer-brand">
+      <a class="brand" href="index.html" aria-label="LUXCEL">
+        <span class="brand-mark"><svg class="icon"><use href="#i-cube"/></svg></span>
+        <span class="brand-name">
+          <strong data-i18n="brand.nick">LUXCEL</strong>
+          <small data-i18n="brand.tag">全球存储封测一站式服务</small>
+        </span>
+      </a>
+      <p data-i18n="foot.tagline">专注全球存储封装测试：工厂代建、新二手封测设备、生产代运营、晶圆代采、主控代流片与 OEM/ODM，产品覆盖 UDP、TF、SSD、SD-NAND、DDR、LPDDR、eMMC 等。</p>
+    </div>
+    <nav class="footer-nav" aria-label="栏目">
+      <h4 data-i18n="foot.navs">栏目</h4>
+      <ul>
+        <li><a href="index.html" data-i18n="nav.home">首页</a></li>
+        <li><a href="about.html" data-i18n="nav.about">公司介绍</a></li>
+        <li><a href="products.html" data-i18n="nav.products">产品</a></li>
+        <li><a href="solutions.html" data-i18n="nav.solutions">方案</a></li>
+        <li><a href="services.html" data-i18n="nav.services">技术服务</a></li>
+        <li><a href="prices.html" data-i18n="nav.prices">实时价格</a></li>
+        <li><a href="contact.html" data-i18n="nav.contact">联系方式</a></li>
+      </ul>
+    </nav>
+    <nav class="footer-nav" aria-label="产品">
+      <h4 data-i18n="foot.products">产品</h4>
+      <ul>
+        <li><a href="products.html#nvme" data-i18n="home.products.1.name">企业级 NVMe SSD</a></li>
+        <li><a href="products.html#ddr5" data-i18n="home.products.2.name">DDR5 内存模组</a></li>
+        <li><a href="products.html#sata" data-i18n="home.products.3.name">工业级 SATA SSD</a></li>
+        <li><a href="products.html#embedded" data-i18n="home.products.4.name">嵌入式存储</a></li>
+      </ul>
+    </nav>
+    <nav class="footer-nav" aria-label="技术服务">
+      <h4 data-i18n="foot.services">技术服务</h4>
+      <ul>
+        <li><a href="services.html#flow" data-i18n="services.flowTitle">项目协作流程</a></li>
+        <li><a href="services.html#rma" data-i18n="services.rmaTitle">RMA 处理状态</a></li>
+        <li><a href="contact.html" data-i18n="nav.contact">联系方式</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="container-wide footer-bottom">
+    <span data-i18n="foot.copyright">© 2026 LUXCEL 存储科技（示例）</span>
+    <span class="legal" data-i18n="foot.legal">本站为示例站点，品牌、规格与联系方式均为占位内容，可按需替换。</span>
+  </div>
+</footer>
+
+<script src="assets/js/i18n.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

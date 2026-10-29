@@ -1,0 +1,61 @@
+{
+  "state": "route-ready",
+  "schema_version": "1.0.0",
+  "request": {
+    "deliverable": "website",
+    "page_context": "website",
+    "design_target": "web",
+    "product_domain": "professional-hardware",
+    "domain_overlay": "technology-industry",
+    "domain_requirements": [
+      "科技证据",
+      "产品能力",
+      "规格、限制、来源和采用路径",
+      "真实 UI / 流程或对象媒体",
+      "不要编造指标、客户、价格、认证或安全能力"
+    ],
+    "product_scope": "product-family",
+    "page_task": "hardware-product-family",
+    "content_archetype": null,
+    "audience": "mixed",
+    "primary_action": "浏览产品族并联系洽谈",
+    "trust_strategy": "specs-data",
+    "media_strategy": "product-render",
+    "motion_level": "restrained",
+    "content_density": "medium",
+    "locale": "zh-CN + en",
+    "style_family": "technology",
+    "visual_style": "科技风",
+    "style_profile_id": "technology-evidence-system",
+    "theme_mode": "dark",
+    "visual_variant": null,
+    "visual_metric_set": null
+  },
+  "composition": {
+    "path": "references/sectors/technology/compositions/product-family-bands.md"
+  },
+  "pages": [
+    {"route": "index.html", "page_task": "brand-homepage", "composition": "references/sectors/technology/compositions/editorial-brand.md"},
+    {"route": "about.html", "page_task": "corporate", "pattern": "page-patterns"},
+    {"route": "products.html", "page_task": "hardware-product-family", "composition": "references/sectors/technology/compositions/product-family-bands.md"},
+    {"route": "solutions.html", "page_task": "corporate", "pattern": "page-patterns"},
+    {"route": "services.html", "page_task": "support-entry", "pattern": "page-patterns"},
+    {"route": "contact.html", "page_task": "corporate", "pattern": "page-patterns"}
+  ],
+  "media_generation": {
+    "mode": "auto",
+    "provider": "dumate-image2.2",
+    "generated_assets": []
+  },
+  "reference_catalog": "technology-consumer-hardware-reference-pack",
+  "reference_trace": {
+    "catalog": "technology-consumer-hardware-reference-pack",
+    "sources": ["tech1-family", "dji-family", "apple-editorial"],
+    "mechanism_dimensions": ["information_architecture", "trust_and_conversion", "visual_language", "media_strategy", "responsive_behavior"]
+  },
+  "downstream_capabilities": [],
+  "delivery": {
+    "format": "multi-file-html",
+    "note": "用户明确要求静态页面源码工程（多文件 HTML/CSS/JS），按规则优先级第 1 条以用户范围为最高优先；视觉 Profile、响应式与无障碍约束照常适用。"
+  }
+}

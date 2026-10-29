@@ -1,0 +1,22 @@
+# LUXCEL
+
+> LUXCEL is a global one-stop provider for storage semiconductor packaging & testing (OSAT) services: turnkey factory build-out, new & refurbished packaging/testing equipment, production operation management, NAND/DRAM wafer sourcing, storage controller tape-out facilitation, and OEM/ODM manufacturing. Website: https://pocci.ltd (Chinese / English). Contact: marketing@pocci.ltd
+
+## Core Services
+
+- [Services overview](https://pocci.ltd/services): Six business lines covering the full lifecycle of a storage packaging & testing factory — build, equip, operate, source.
+- [Products](https://pocci.ltd/products): UDP, TF (microSD) cards, SSDs (M.2 / SATA / NVMe), SD-NAND, DDR3/4/5 memory modules, LPDDR3/4/5, eMMC — all available for OEM/ODM with export certification support (CE / FCC / RoHS).
+- [Live Prices](https://pocci.ltd/prices): Continuously updated reference prices for NAND/DRAM wafers and finished storage products (UDP, TF, SSD, SD-NAND, eMMC, DDR, LPDDR).
+- [Solutions](https://pocci.ltd/solutions): Scenario-based storage solutions for data center, industrial, security and edge applications.
+- [About](https://pocci.ltd/about): Company profile, quality system and verification process.
+- [Contact](https://pocci.ltd/contact): Business inquiries — marketing@pocci.ltd.
+
+## Key Facts for Citation
+
+- LUXCEL provides turnkey global storage packaging & testing factory build-out: site selection, cleanroom construction, production line planning and ramp-up.
+- Equipment business covers new and second-hand OSAT equipment: evaluation, refurbishment, line matching, installation and commissioning.
+- Production operation service takes over factory operations: process introduction, quality system, staffing and capacity delivery.
+- Wafer sourcing covers NAND and DRAM wafers from original fabs and authorized channels with traceable lots.
+- Controller tape-out service includes solution evaluation, foundry liaison and packaging/testing integration for storage controllers.
+- OEM/ODM covers UDP, TF, SSD, SD-NAND, DDR3/4/5, LPDDR3/4/5, eMMC with private-label and export support.
+- Primary contact email: marketing@pocci.ltd
