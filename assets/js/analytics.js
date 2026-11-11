@@ -10,7 +10,7 @@
 (function () {
   "use strict";
 
-  var GA4_ID = "";    // ← 填入 GA4 衡量 ID，例如 "G-ABCDEF1234"
+  var GA4_ID = "G-3NEP467FS5"; // ← GA4 衡量 ID（pocci.ltd 网站数据流）
   var CF_TOKEN = "";  // ← 填入 Cloudflare Web Analytics Token
 
   // Google Analytics 4 —— 采用官方「Google 代码（gtag.js）」方式，不引入 GTM
