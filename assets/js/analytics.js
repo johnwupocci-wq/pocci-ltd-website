@@ -13,18 +13,19 @@
   var GA4_ID = "";    // ← 填入 GA4 衡量 ID，例如 "G-ABCDEF1234"
   var CF_TOKEN = "";  // ← 填入 Cloudflare Web Analytics Token
 
-  // Google Analytics 4（异步注入，不阻塞渲染）
+  // Google Analytics 4 —— 采用官方「Google 代码（gtag.js）」方式，不引入 GTM
   if (GA4_ID && /^[GT]-[A-Z0-9]{6,}$/i.test(GA4_ID)) {
-    var ga = document.createElement("script");
-    ga.async = true;
-    ga.src = "https://www.googletagmanager.com/gtag/js?id=" + encodeURIComponent(GA4_ID);
-    document.head.appendChild(ga);
-
+    // 顺序与官方片段一致：先建立 dataLayer / gtag，再异步加载 gtag.js
     window.dataLayer = window.dataLayer || [];
     var gtag = function () { window.dataLayer.push(arguments); };
     window.gtag = window.gtag || gtag;
     gtag("js", new Date());
     gtag("config", GA4_ID, { anonymize_ip: true });
+
+    var ga = document.createElement("script");
+    ga.async = true;
+    ga.src = "https://www.googletagmanager.com/gtag/js?id=" + encodeURIComponent(GA4_ID);
+    document.head.appendChild(ga);
   }
 
   // Cloudflare Web Analytics（无 Cookie、免费）
