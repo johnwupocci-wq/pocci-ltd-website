@@ -74,6 +74,14 @@
       el.setAttribute("alt", t(key));
     });
 
+    /* 今日行情快报：按当前语言整块切换中文／英文版本 */
+    var briefBlocks = document.querySelectorAll("[data-brief-lang]");
+    Array.prototype.forEach.call(briefBlocks, function (el) {
+      var visible = el.getAttribute("data-brief-lang") === currentLang;
+      el.hidden = !visible;
+      el.style.display = visible ? "" : "none";
+    });
+
     /* 语言按钮激活态 */
     var buttons = document.querySelectorAll("[data-lang]");
     Array.prototype.forEach.call(buttons, function (btn) {
